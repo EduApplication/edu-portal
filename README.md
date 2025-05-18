@@ -1,6 +1,3 @@
-### For eduportal (README.md):
-
-```markdown
 # eduportal
 
 Frontend application for the educational platform built with React.
