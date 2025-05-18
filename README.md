@@ -1,4 +1,4 @@
-# edu-portal
+# Edu Portal
 
 Frontend application for the educational platform built with React.
 
