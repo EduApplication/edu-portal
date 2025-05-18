@@ -1,0 +1,85 @@
+.classes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.classes-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.classes-error {
+    background-color: rgba(220, 0, 78, 0.1);
+    color: var(--secondary-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.classes-loading {
+    text-align: center;
+    padding: 24px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.classes-empty {
+    text-align: center;
+    padding: 24px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.class-card {
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.class-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.class-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.class-name {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.class-details {
+    flex-grow: 1;
+    margin-bottom: 16px;
+}
+
+.class-details p {
+    margin: 6px 0;
+    color: #666;
+}
+
+.class-card-actions {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .classes-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .classes-title {
+        margin-bottom: 16px;
+    }
+}

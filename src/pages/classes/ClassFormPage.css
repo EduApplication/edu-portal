@@ -1,0 +1,40 @@
+.class-form-header {
+    margin-bottom: 24px;
+}
+
+.class-form-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.class-form-loading {
+    text-align: center;
+    padding: 24px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.class-form-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.class-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.class-form-error {
+    background-color: rgba(220, 0, 78, 0.1);
+    color: var(--secondary-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.class-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}

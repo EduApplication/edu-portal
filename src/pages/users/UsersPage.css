@@ -1,0 +1,103 @@
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.users-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.users-error {
+    background-color: rgba(220, 0, 78, 0.1);
+    color: var(--secondary-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.users-loading, .users-empty {
+    text-align: center;
+    padding: 24px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.user-card {
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.user-email {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.user-role {
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+.subjects-title, .class-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.subjects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.subject-item {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.no-subjects, .no-class {
+    font-style: italic;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.user-card-actions {
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .users-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .users-title {
+        margin-bottom: 16px;
+    }
+}

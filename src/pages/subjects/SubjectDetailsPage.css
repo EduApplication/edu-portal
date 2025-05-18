@@ -1,0 +1,125 @@
+.subject-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.subject-detail-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.subject-detail-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.subject-detail-loading {
+    text-align: center;
+    padding: 24px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.subject-detail-error {
+    background-color: rgba(220, 0, 78, 0.1);
+    color: var(--secondary-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.subject-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.subject-detail-card, .subject-teachers-card {
+    padding: 24px;
+}
+
+.subject-detail-subtitle {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.subject-detail-row {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.subject-detail-label {
+    width: 150px;
+    font-weight: bold;
+    color: #666;
+}
+
+.subject-detail-value {
+    flex: 1;
+}
+
+.teachers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.teacher-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+.teacher-name {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.teacher-email {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.no-teachers {
+    padding: 16px;
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}
+
+.add-teacher-button {
+    margin-top: 24px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .subject-detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subject-detail-title {
+        margin-bottom: 16px;
+    }
+
+    .subject-detail-content {
+        grid-template-columns: 1fr;
+    }
+
+    .subject-detail-row {
+        flex-direction: column;
+    }
+
+    .subject-detail-label {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}

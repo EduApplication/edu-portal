@@ -1,0 +1,43 @@
+.user-form-card {
+    margin-bottom: 20px;
+}
+
+.user-form-section {
+    padding: 16px;
+}
+
+.user-form-subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.user-form-error {
+    padding: 12px;
+    margin-bottom: 16px;
+    background-color: #ffebee;
+    border-left: 4px solid #d32f2f;
+    color: #d32f2f;
+    border-radius: 4px;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.related-users-list, .classes-list {
+    margin: 0;
+    padding-left: 16px;
+}
+
+.related-users-list li, .classes-list li {
+    margin-bottom: 4px;
+}

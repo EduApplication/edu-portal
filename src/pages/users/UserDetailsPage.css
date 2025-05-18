@@ -1,0 +1,32 @@
+.user-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-detail-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.user-detail-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.user-detail-loading,
+.user-detail-error {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-detail-error {
+    color: #d32f2f;
+    background-color: #ffebee;
+}

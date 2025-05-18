@@ -1,0 +1,34 @@
+.dashboard-header {
+    margin-bottom: 24px;
+}
+
+.dashboard-title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.dashboard-welcome {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.dashboard-card {
+    height: 100%;
+}
+
+.dashboard-card-text {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}

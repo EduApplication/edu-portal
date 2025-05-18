@@ -1,0 +1,153 @@
+.schedule-header {
+    margin-bottom: 24px;
+}
+
+.schedule-title {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.schedule-navigation {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.schedule-nav-button {
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.schedule-nav-button:hover {
+    background-color: #e0e0e0;
+}
+
+.schedule-nav-button.current {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.schedule-nav-button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.schedule-nav-button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.schedule-date-range {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.schedule-error {
+    background-color: rgba(220, 0, 78, 0.1);
+    color: var(--secondary-color);
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.schedule-loading {
+    text-align: center;
+    padding: 24px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 16px;
+}
+
+.schedule-day {
+    min-height: 250px;
+    padding: 0;
+}
+
+.schedule-day.today {
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.day-header {
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.day-name {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.day-date {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.day-lessons {
+    padding: 12px;
+}
+
+.no-lessons {
+    text-align: center;
+    padding: 24px 0;
+    color: #999;
+    font-style: italic;
+}
+
+.lesson-card {
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    background-color: rgba(25, 118, 210, 0.05);
+    border-left: 3px solid var(--primary-color);
+}
+
+.lesson-time {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.lesson-subject {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.lesson-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+}
+
+.lesson-room, .lesson-teacher, .lesson-class {
+    color: #666;
+}
+
+.lesson-topic {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+@media (max-width: 1200px) {
+    .schedule-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+}
